@@ -14,6 +14,8 @@ Lightroom Classic doesn't include FTP export out of the box. Most existing FTP e
 - Password stored securely in your system's keychain — never written to disk in plain text
 - Works with any FTP server, not just Pixilive
 - Recommended export settings (JPEG, 2048px long edge, 72 dpi, full metadata) applied automatically when exporting to the Pixilive server
+- Automatic retry: if the connection drops, the plugin reconnects and retries each file up to 3 times. Files that still fail are kept in `Documents/Pixilive-failed-uploads` and you can retry them right away
+- Interface in English and French, following Lightroom Classic's language (restart Lightroom after installing or updating)
 - Behaves like any standard Lightroom export preset
 
 ## Installation
@@ -36,6 +38,10 @@ Tip: once configured, save these settings as a Lightroom **Export Preset** (the 
 
 To export to a different FTP server, just replace the "Server" field — the plugin works generically with any FTP host.
 
+## Credits
+
+The automatic retry idea comes from Mattia Parrinello's fork of this plugin. Thank you!
+
 ## Compatibility
 
 Lightroom Classic, macOS and Windows. Requires a valid FTP account.
@@ -45,5 +51,7 @@ Lightroom Classic, macOS and Windows. Requires a valid FTP account.
 [Pixilive](https://about.pixi.live) is a real-time photo distribution platform for professional events (conferences, trade shows, seminars). Organizers get instant, no-app-required photo delivery to attendees, speakers, and partners — with measurable engagement stats.
 
 ## Support
-Found a bug or have a question? Open an issue on this repo — it helps other users find answers too.
+
+Found a bug or have a question? Open an [issue](../../issues) on this repo — it helps other users find answers too.
+
 For anything else, contact contact@pixi.live or visit [about.pixi.live](https://about.pixi.live).
