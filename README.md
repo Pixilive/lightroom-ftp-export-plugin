@@ -40,7 +40,7 @@ To export to a different FTP server, just replace the "Server" field — the plu
 
 ## Credits
 
-The automatic retry idea comes from Mattia Parrinello's fork of this plugin. Thank you!
+The automatic retry idea comes from @MattiaPARRINELLO's fork of this plugin. Thank you!
 
 ## Compatibility
 
